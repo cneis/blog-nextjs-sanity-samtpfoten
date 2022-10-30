@@ -13,7 +13,7 @@ import portableTextStyles from './portable-text-styles.module.css'
 
 export default function PostBody({ content }) {
   return (
-    <div className={`mx-auto max-w-2xl ${portableTextStyles.portableText}`}>
+    <div className={`mx-auto max-w-2xl border-solid ${portableTextStyles.portableText}`}>
       <PortableText value={content} />
     </div>
   )

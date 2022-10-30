@@ -10,6 +10,8 @@ import { indexQuery, settingsQuery } from '../lib/queries'
 import { usePreviewSubscription } from '../lib/sanity'
 import { getClient, overlayDrafts } from '../lib/sanity.server'
 
+import Navbar from '../components/Navbar'
+
 export default function Index({
   allPosts: initialAllPosts,
   preview,
@@ -29,6 +31,7 @@ export default function Index({
           <title>{title}</title>
         </Head>
         <Container>
+          <Navbar />
           <BlogHeader title={title} />
           {heroPost && (
             <HeroPost
